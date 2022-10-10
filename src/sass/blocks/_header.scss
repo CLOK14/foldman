@@ -1,0 +1,29 @@
+.header {
+    min-height: 100vh;
+    background: url("../img/IMG_3246.jpg") center (center / cover) no-repeat;
+    padding-top: 206px;
+    position: relative;
+    &__buttons {
+        margin-top: 25px;
+        display: flex;
+        justify-content: space-between;
+        width: 250px;
+        align-items: center;
+    }
+    &__subtitle {
+        position: relative;
+        padding-left: 10px;
+        @include before-circle;
+        z-index: 2;
+        color: #0D0D0D;
+    }
+    &__link {
+        color: #000000;
+        font-weight: 700;
+        font-size: 14px;
+        &:hover {
+            color: #000000;
+            text-decoration: none;
+        }
+    }
+}

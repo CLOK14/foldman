@@ -1,0 +1,97 @@
+.experience {
+    padding-top: 120px;
+    color: var(--white-text);
+    &__subtitle {
+        position: relative;
+        @include before-circle;
+        z-index: 1;
+        &:before {
+            top: -25%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__wrapper {
+        display: grid;
+        margin: 60px 65px 0 65px;
+        grid-template-columns: 425px 425px;
+        column-gap: 136px;
+    }
+    &__column {
+        &-title {
+            padding-left: 35px;
+            position: relative;
+            &:before {
+                content: '';
+                position: absolute;
+                width: 15px;
+                height: 15px;
+                background: #FFA501;
+                border-radius: 100%;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 0;
+            }
+        }
+    }
+    ul {
+        list-style-type: none;
+        padding: 0;
+        li {
+            position: relative;
+            margin-top: 45px;
+            //padding-left: 43px;
+            &:before {
+                content: '';
+                position: absolute;
+                width: 1px;
+                height: calc(100% + 45px);
+                background-color: #000000;
+                top: -48px;
+                left: 7px;
+            }
+        }
+    }
+    &__item {
+        position: relative;
+        padding-left: 43px;
+        &-head {
+            position: relative;
+            padding-left: 56px;
+            h3 {
+                margin: 0;
+            }
+        }
+        &-icon {
+            position: absolute;
+            left: 14px;
+            top: 50%;
+            transform: translateY(-50%);
+            @include before-circle;
+            &:before {
+                top: -13px;
+                left: -13px;
+            }
+        }
+        &-subtitle {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+        }
+        &-body {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            top: 12px;
+            left: 7px;
+            width: 43px;
+            height: 1px;
+            background-color: #000000;
+        }
+    }
+
+}

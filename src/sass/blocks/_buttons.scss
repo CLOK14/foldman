@@ -1,0 +1,25 @@
+.button {
+    display: block;
+    //width: 135px;
+    height: 45px;
+    background: $main-orange;
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 45px;
+    color: #000000;
+    transition: 0.5s all;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    padding: 0 26px;
+    border: none;
+    cursor: pointer;
+    &:hover {
+        color: #000000;
+        text-decoration: none;
+        background-color: #cc8b10;
+    }
+    &_no-bg {
+        background: none;
+        width: auto;
+    }
+}
